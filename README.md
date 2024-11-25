@@ -37,6 +37,18 @@ Feature Transformation: Perform necessary transformations on features such as sa
 Datetime Features: Extract components from datetime columns, such as day_of_week, month, year, etc., and use them as new features.
 Encoding Categorical Features: Apply encoding techniques like one-hot encoding, label encoding, or target encoding to convert categorical features to numeric values.
 
+# Feature Engineering Techniques
+1. Feature Creation
+Order Duration: Calculate the time difference between ship_date and order_date to understand how long orders take to ship.
+Profit Margin: Calculate profit margin as (profit / sales) * 100 to represent the percentage of profit relative to sales.
+2. Feature Transformation
+Log Transformation: Applied to sales and profit to reduce skewness in the data for better model performance.
+Normalization: Scaled the profit feature between 0 and 1 for uniformity across features.
+Standardization: Scaled numerical features to have zero mean and unit variance to prepare them for machine learning models.
+3. Working with DateTime Features
+Extract Date Components: Extract features like year, month, day, weekday from the order_date and ship_date columns.
+Day of the Week: Determine the day of the week when an order was placed or shipped (useful for identifying trends over days).
+Seasonality: Create features that group months into seasons (e.g., Spring, Summer, Autumn, Winter) to identify seasonal trends.
 
 # Results and Observations
 Feature Creation: Generating new features like Order_Duration and Profit Margin helps provide insights into order processing and profitability.
